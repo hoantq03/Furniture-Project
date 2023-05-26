@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./assets/icon/themify-icons/themify-icons.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- <script defer src="./product.js"></script> -->
+  <link rel="stylesheet" href="./product.css" />
+  <script defer src="./detail-product.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header id="Header">
+    <nav class="navbar">
+      <img class="logo" src="./assets/img/realImg/Logo.jpg" alt="Logo" />
+
+      <ul>
+        <li class="dropdown"><a href="./index.html">Home</a></li>
+        <li class="dropdown">
+          <a class="nav_link" href="#">Design</a>
+
+          <ul class="child-menu">
+            <li><a href="#house">House</a></li>
+            <li><a href="#living--room">Living Room</a></li>
+            <li><a href="#bath--room">Bathroom</a></li>
+            <li><a href="#bed--room">Bedroom</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="nav_link" href="#">Product</a>
+          <ul class="child-menu">
+            <li><a href="./product.html">Chair</a></li>
+            <li><a href="./product.html">Table</a></li>
+            <li><a href="./product.html">Bed</a></li>
+            <li><a href="./product.html">Sofa</a></li>
+            <li><a href="./product.html">Wardrobe</a></li>
+            <li><a href="./product.html">Bookshelf</a></li>
+          </ul>
+        </li>
+        <li class="btn--account"><a href="#">Open Account</a></li>
+        <li>
+          <a href="#"><i class="ti-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- Products  -->
+
+  <!-- FILTER BAR -->
+  <div class="filter_bar">
+    <ul>
+      <span class="label">Sort For</span>
+      <li class="fb_menu"><a href="#">Products</a></li>
+      <li class="fb_menu"><a href="#">New</a></li>
+      <li class="fb_menu"><a href="#">Best Seller</a></li>
+      <li class="dropdown price">
+        <a class="nav_link" href="#">Price</a>
+
+        <ul class="filter-menu">
+          <li><a href="#bath--room">Low to High</a></li>
+          <li><a href="#bed--room">High to Low</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+
+  <!-- Login -->
+
+  <div class="overlay hidden"></div>
+
+  <section class="full-screen" width="100vw" height="100vh">
+    <div class="Popup-account hidden">
+      <div class="center">
+        <h1>Login</h1>
+        <form method="post">
+          <div class="txt_field">
+            <input type="text" required />
+            <span></span>
+            <label>Username</label>
+          </div>
+          <div class="txt_field">
+            <input type="password" required />
+            <span></span>
+            <label>Password</label>
+          </div>
+          <div class="pass">Forgot Password?</div>
+          <input type="submit" value="Login" />
+          <div class="signup_link">Do not Account ? <a href="#">Signup</a></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS CHAIR -->
+
+
+  <section id="Pro-details">
+    <div class="single-pro-img">
+      <img src="./assets/Product/Chair/Chair_4.jpg" width="100%" id="MainImg" alt="">
+
+      <div class="small-img-group">
+        <div class="small-img-col">
+          <img src="./assets/Product/Chair/Chair_4.jpg" data-src="./assets/Product/Chair/Chair_4.jpg" width="100%"
+            height="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="./assets/Product/Chair/Chair_7.jpg" data-src="./assets/Product/Chair/Chair_7.jpg" width="100%"
+            height="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="./assets/Product/Chair/Chair_11.jpg" data-src="./assets/Product/Chair/Chair_11.jpg" width="100%"
+            height="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+          <img src="./assets/Product/Chair/Chair_20.jpg" data-src="./assets/Product/Chair/Chair_20.jpg" width="100%"
+            height="100%" class="small-img" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="single-pro-details">
+      <h4>Sofa Living Room M1_1</h4>
+      <div class="review-pro">
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <i class="fa-solid fa-star star"></i>
+        <span>(10)</span>
+      </div>
+      <div class="info">
+        <p>Share: <a href="https://hufi.edu.vn"><i class="fa-brands fa-facebook"></i></a></p>
+        <p>Sold : 102</p>
+      </div>
+
+      <div class="code-pro">
+        <p><strong>SKU:</strong> ADSQWER101-SP123</p>
+        <p><i id="heart" class="ti-heart fa-solid fa-heart-circle-check"></i></p>
+
+      </div>
+
+      <div class="price">
+        <p>4.490.000đ</p>
+      </div>
+      <div id="Change-color">
+        <input type="radio" id="Be" name="color" hidden>
+        <label for="colorBe" class="colorOption colorBe"></label>
+
+        <input type="radio" id="Black" name="color" hidden>
+        <label for="colorBlack" class="colorOption colorBlack"></label>
+
+        <input type="radio" id="colorGray" name="color" hidden>
+        <label for="colorGray" class="colorOption colorGray"></label>
+      </div>
+
+      <div class="details">
+        <p><strong>Size :</strong> Length 46cm x width 54cm x height 82cm</p>
+        <p><strong>Material :</strong></p>
+        <p> - Natural woods</p>
+        <p> - Synthetic fabric is water and oil resistant</p>
+      </div>
+
+      <div class="selector">
+        <div class="quantity">
+          <input type="button" value="-" onclick=" " class="qty-btn qty-decrease">
+          <input type="text" id="quantity" name="quantity" value="1" min="1" class="quantity-selector">
+          <input type="button" value="+" onclick=" " class="qty-btn qty-increase">
+        </div>
+
+        <div class="addCart">
+          <button type="button" id="Add-to-cart" class="btn-Addtocart" name="add">Thêm vào giỏ hàng</button>
+          <button type="button" id="Buy-now" class="btn-Addtocart" name="add"> Mua ngay</button>
+        </div>
+      </div>
+
+      <div class="info-product">
+        <p><i class="ti-check"></i> Freeship and installation when you buy</p>
+        <p><i class="ti-check"></i> Free 1 for 1 exchange - 2 years warranty - Lifetime maintenance</p>
+        <p><i class="ti-check"></i> Recieve Voucher : <strong>MOHO50K, MOHO100K, MOHO200K, MOHO300K, MOHO500K.</strong>
+          Valid only once per customer and cannot be combined with other promotions. Expiry:
+          May 31, 2023 (*)</p>
+        <p>(*) Not applicable to Ornaments category</p>
+        <p>(**) Not applicable to Clearance products. Only 1 year warranty for chair frame, wheel and lever for Office
+          Chair Room</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer id="footer" class="section">
+    <div class="col">
+      <a href="#"><img src="./assets/img/realImg/Logo.jpg" class="logo" /></a>
+      <h4>Contact</h4>
+      <p><strong>Address:</strong> 140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, Tp.Hồ Chí Minh</p>
+      <p><strong>Phone:</strong> +84 948444888 / +84 222843177</p>
+      <div class="follow">
+        <h4>Follow Us</h4>
+        <div class="icon">
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h4>About</h4>
+      <a href="#">Delivery Infomation</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Term & Conditions</a>
+      <a href="#">Contact me</a>
+    </div>
+    <div class="col">
+      <h4>Account</h4>
+      <a href="#">Sign In</a>
+      <a href="#">View Cart</a>
+      <a href="#">My Wishlist</a>
+      <a href="#">Track My Order</a>
+      <a href="#">Help</a>
+    </div>
+    <div class="copyright">
+      <p>© 2023, Design by Group 9 - HUFI</p>
+    </div>
+  </footer>
+</body>
+
+</html>
